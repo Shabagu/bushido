@@ -1,0 +1,220 @@
+$bg-color: black;
+$main-color-light: lime;
+$main-color-dark: darkgreen;
+$main-color-to-top: #00ff0025;
+$main-color-test: red;
+
+$width-page: 1182px;
+$width-nav: 200px;
+$width-ads: 200px;
+$width-content: calc(#{$width-page} - #{$width-nav} - #{$width-ads});
+
+// * { border: solid $main-color-light 1px; }
+
+body {
+  background-color: $bg-color;
+}
+
+.App {
+  display: grid;
+  grid-template-areas:
+    "h h h h h"
+    "l n c a r"
+    "f f f f f";
+  grid-template-rows: 120px 1fr 120px;
+  grid-template-columns: 1fr $width-nav $width-content $width-ads 1fr;
+  // grid-column-gap: 20px;
+  font-family: 'StadioNow-Monolinea';
+  font-size: 24px;
+  // background-color: $bg-color;
+  color: $main-color-light;
+}
+
+
+.Header {
+  grid-area: h;
+  position: fixed;
+  width: 100%;
+  font-size: 2em;
+  padding: 8px 0;
+  font-family: 'StadioNow-Novarese';
+  text-shadow: 4px 4px 0 $main-color-dark;
+  border: solid $main-color-light;
+  border-width: 0 0 4px;
+  background-color: $bg-color;
+  display: flex;
+  justify-content: center;
+}
+.Header-wrapper {
+  width: $width-page;
+}
+.Header-logo {
+  margin-left: -64px;
+}
+.Header-logo img {
+  height: 86px;
+}
+
+
+.Nav {
+  grid-area: n;
+  overflow: hidden;
+}
+.Nav .Link {
+  text-indent: 24px;
+  line-height: 1.3em;
+}
+.Nav .Link:first-child {
+  margin-top: 24px;
+}
+.Nav .Link:last-child {
+  margin-top: 32px;
+}
+.Nav .Link a{
+  color: $main-color-light;
+  text-decoration: none;
+}
+.Nav .Link a:focus{
+  outline: 1px solid $main-color-light;
+}
+
+
+.Left-to-main {
+  grid-area: l;
+  border: solid $main-color-light;
+  border-width: 0 4px 0 0;
+  transition-timing-function: ease;
+  transition-duration: 200ms;
+}
+.Left-to-main:hover {
+  cursor: pointer;
+  background-color: $main-color-to-top;
+}
+.Right-to-main {
+  grid-area: r;
+  border: solid $main-color-light;
+  border-width: 0 0 0 4px;
+}
+
+
+.Content {
+  grid-area: c;
+  padding: 0 16px;
+  border: solid $main-color-light;
+  border-width: 0 4px;
+  min-height: 100vh;
+}
+.Content .Background img {
+  display: block;
+  width: 100%;
+  margin: 20px auto;
+}
+.Content .User {
+  display: flex;
+}
+.Content .User .Avatar {
+  justify-content: flex-end;
+  width: 128px;
+  margin: 0 16px 0 0;
+}
+.Content .User .Avatar img {
+  width: 100%;
+}
+.Content .User .Description {
+  line-height: 0.9em;
+
+}
+.Content .User .Description .Status {
+  font-size: 0.8em;
+  line-height: 1.6em;
+  text-indent: 16px;
+}
+.Content .User .Description .Additional-info {
+  margin: 12px 0 0 0;
+  font-size: 0.8em;
+  line-height: 1.15em;
+}
+
+.Content .Posts {
+  margin: 48px 0;
+}
+.Content .Posts .Title {
+  text-indent: 16px;
+}
+.Content .Posts .Adding {
+  text-align: right;
+}
+.Content .Posts .Adding form {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 0 2%;
+}
+.Content .Posts .Adding form textarea {
+  resize: none;
+  margin: 12px 0;
+  background-color: $bg-color;
+  color: $main-color-light;
+  font-family: 'StadioNow-Monolinea';
+  font-size: 0.8em;
+  padding: 8px;
+}
+.Content .Posts .Adding form textarea:focus {
+  outline: none;
+  border-color: $main-color-light;
+}
+.Content .Posts .Adding form input[type=submit] {
+  width: 20%;
+  align-self: flex-end;
+  color: $main-color-light;
+  background-color: $bg-color;
+  font-size: 0.7em;
+  border-style: solid;
+  border-width: 1px;
+  text-align: left;
+  text-indent: 24px;
+}
+.Content .Posts .Adding form input[type=submit]:focus {
+  border: 1px solid $main-color-light;
+}
+
+
+
+.Content .Posts .Post {
+  margin: 16px 0;
+}
+.Post-author {
+  display: flex;
+  margin-bottom: 12px;
+}
+.Post-author-avatar {
+  width: 64px;
+  border-radius: 32px;
+}
+.Post-author-nickname {
+  margin-left: 24px;
+}
+
+
+.Ads {
+  grid-area: a;
+}
+
+.Footer {
+  grid-area: f;
+  border: solid $main-color-light;
+  border-width: 4px 0 0;
+}
+
+@font-face {
+  font-family: 'StadioNow-Novarese';
+  src: url(fonts/StadioNow-Novarese.otf);
+}
+
+@font-face {
+  font-family: 'StadioNow-Monolinea';
+  src: url(fonts/StadioNow-Monolinea.otf);
+}
+
+
