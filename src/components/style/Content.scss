@@ -1,0 +1,98 @@
+@import "./colors";
+
+.Content {
+  grid-area: c;
+  padding: 0 16px;
+  border: solid $main-color-light;
+  border-width: 0 4px;
+  min-height: 100vh;
+}
+.Content .Background img {
+  display: block;
+  width: 100%;
+  margin: 20px auto;
+}
+.Content .User {
+  display: flex;
+}
+.Content .User .Avatar {
+  justify-content: flex-end;
+  width: 128px;
+  margin: 0 16px 0 0;
+}
+.Content .User .Avatar img {
+  width: 100%;
+}
+.Content .User .Description {
+  line-height: 0.9em;
+
+}
+.Content .User .Description .Status {
+  font-size: 0.8em;
+  line-height: 1.6em;
+  text-indent: 16px;
+}
+.Content .User .Description .Additional-info {
+  margin: 12px 0 0 0;
+  font-size: 0.8em;
+  line-height: 1.15em;
+}
+
+.Content .Posts {
+  margin: 48px 0;
+}
+.Content .Posts .Title {
+  text-indent: 16px;
+}
+.Content .Posts .Adding {
+  text-align: right;
+}
+.Content .Posts .Adding form {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 0 2%;
+}
+.Content .Posts .Adding form textarea {
+  resize: none;
+  margin: 12px 0;
+  background-color: $background-color;
+  color: $main-color-light;
+  font-family: 'StadioNow-Monolinea';
+  font-size: 0.8em;
+  padding: 8px;
+}
+.Content .Posts .Adding form textarea:focus {
+  outline: none;
+  border-color: $main-color-light;
+}
+.Content .Posts .Adding form input[type=submit] {
+  width: 20%;
+  align-self: flex-end;
+  color: $main-color-light;
+  background-color: $background-color;
+  font-size: 0.7em;
+  border-style: solid;
+  border-width: 1px;
+  text-align: left;
+  text-indent: 24px;
+}
+.Content .Posts .Adding form input[type=submit]:focus {
+  border: 1px solid $main-color-light;
+}
+
+.Content .Posts .Post {
+  margin: 16px 0;
+}
+.Post-author {
+  display: flex;
+  margin-bottom: 12px;
+}
+.Post-author-avatar {
+  width: 64px;
+  border-radius: 32px;
+}
+.Post-author-nickname {
+  margin-left: 24px;
+}

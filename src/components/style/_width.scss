@@ -1,0 +1,5 @@
+
+$width-page: 1182px;
+$width-nav: 200px;
+$width-ads: 200px;
+$width-content: calc(#{$width-page} - #{$width-nav} - #{$width-ads});

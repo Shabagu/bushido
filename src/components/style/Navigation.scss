@@ -1,0 +1,23 @@
+@import "./colors";
+
+.Navigation {
+  grid-area: n;
+  overflow: hidden;
+}
+.Navigation .Item {
+  text-indent: 24px;
+  line-height: 1.3em;
+}
+.Navigation .Item:first-child {
+  margin-top: 24px;
+}
+.Navigation .Item:last-child {
+  margin-top: 32px;
+}
+.Navigation .Item a{
+  color: $main-color-light;
+  text-decoration: none;
+}
+.Navigation .Item a:focus{
+  outline: 1px solid $main-color-light;
+}
