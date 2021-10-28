@@ -1,6 +1,14 @@
 @import "components/style/colors";
 @import "components/style/width";
 
+@font-face {
+  font-family: 'StadioNow-Novarese';
+  src: url(fonts/StadioNow-Novarese.otf);
+}
+@font-face {
+  font-family: 'StadioNow-Monolinea';
+  src: url(fonts/StadioNow-Monolinea.otf);
+}
 
 .App {
   display: grid;
@@ -8,7 +16,7 @@
     "h h h h h"
     "l n c a r"
     "f f f f f";
-  grid-template-rows: 120px 1fr 120px;
+  grid-template-rows: 88px 1fr 120px;
   grid-template-columns: 1fr $width-nav $width-content $width-ads 1fr;
   // grid-column-gap: 20px;
   font-family: 'StadioNow-Monolinea';
@@ -16,19 +24,8 @@
   color: $main-color-light;
 }
 
-// * { border: solid $main-color-light 1px; }
-
 body {
   background-color: $background-color;
 }
 
-
-@font-face {
-  font-family: 'StadioNow-Novarese';
-  src: url(fonts/StadioNow-Novarese.otf);
-}
-
-@font-face {
-  font-family: 'StadioNow-Monolinea';
-  src: url(fonts/StadioNow-Monolinea.otf);
-}
+// * { border: solid $main-color-light 1px; }

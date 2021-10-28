@@ -1,13 +1,13 @@
-import './style/Header.scss'
+import classes from './style/Header.module.scss'
 import logo from '../logo.png'
 
 function Header() {
   return (
-    <header className="Header">
-      <div className="Header-wrapper">
-        <div className="Header-logo">
+    <header className={classes.header}>
+      <div className={classes.wrapper}>
+        <div className={classes.logo}>
           <img src={logo} alt="Logo" />
-          <span className="Site-name">Shabagu</span>  
+          <div className={classes.title}>Shabagu</div>
         </div>
       </div>
     </header>

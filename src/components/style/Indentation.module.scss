@@ -1,17 +1,17 @@
 @import "./colors";
 
-.Left-to-main {
+.left {
   grid-area: l;
   border: solid $main-color-light;
   border-width: 0 4px 0 0;
   transition-timing-function: ease;
   transition-duration: 200ms;
 }
-.Left-to-main:hover {
+.left:hover {
   cursor: pointer;
   background-color: $main-color-to-top;
 }
-.Right-to-main {
+.right {
   grid-area: r;
   border: solid $main-color-light;
   border-width: 0 0 0 4px;

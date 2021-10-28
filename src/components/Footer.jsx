@@ -1,9 +1,9 @@
-import './style/Footer.scss'
+import classes from './style/Footer.module.scss';
 
 function Footer() {
   return(
-    <footer className="Footer">
-      {/* FOOTER */}
+    <footer className={classes.footer}>
+      FOOTER
     </footer>
   );
 }

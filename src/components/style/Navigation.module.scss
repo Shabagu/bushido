@@ -1,23 +1,26 @@
 @import "./colors";
 
-.Navigation {
+.nav {
   grid-area: n;
   overflow: hidden;
 }
-.Navigation .Item {
-  text-indent: 24px;
+.item {
+  text-indent: 12px;
   line-height: 1.3em;
 }
-.Navigation .Item:first-child {
+.item:first-child {
   margin-top: 24px;
 }
-.Navigation .Item:last-child {
+.item:last-child {
   margin-top: 32px;
 }
-.Navigation .Item a{
+.item a{
+  display: block;
+  width: 92%;
+  margin-left: 4%;
   color: $main-color-light;
   text-decoration: none;
 }
-.Navigation .Item a:focus{
+.item a:focus{
   outline: 1px solid $main-color-light;
 }
