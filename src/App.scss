@@ -31,6 +31,7 @@ body {
 }
 
 
+
 .Header {
   grid-area: h;
   position: fixed;
@@ -56,27 +57,29 @@ body {
 }
 
 
+
 .Nav {
   grid-area: n;
   overflow: hidden;
 }
-.Nav .Link {
+.Nav .Item {
   text-indent: 24px;
   line-height: 1.3em;
 }
-.Nav .Link:first-child {
+.Nav .Item:first-child {
   margin-top: 24px;
 }
-.Nav .Link:last-child {
+.Nav .Item:last-child {
   margin-top: 32px;
 }
-.Nav .Link a{
+.Nav .Item a{
   color: $main-color-light;
   text-decoration: none;
 }
-.Nav .Link a:focus{
+.Nav .Item a:focus{
   outline: 1px solid $main-color-light;
 }
+
 
 
 .Left-to-main {
@@ -95,6 +98,7 @@ body {
   border: solid $main-color-light;
   border-width: 0 0 0 4px;
 }
+
 
 
 .Content {
@@ -179,8 +183,6 @@ body {
   border: 1px solid $main-color-light;
 }
 
-
-
 .Content .Posts .Post {
   margin: 16px 0;
 }
@@ -197,15 +199,21 @@ body {
 }
 
 
+
 .Ads {
   grid-area: a;
 }
+
+
 
 .Footer {
   grid-area: f;
   border: solid $main-color-light;
   border-width: 4px 0 0;
 }
+
+
+
 
 @font-face {
   font-family: 'StadioNow-Novarese';
