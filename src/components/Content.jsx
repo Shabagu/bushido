@@ -1,3 +1,5 @@
+import './style/Content.scss';
+
 function Content() {
   return(
       <main className="Content">
@@ -51,6 +53,5 @@ function Post() {
   </div>
   );
 }
-
 
 export default Content;

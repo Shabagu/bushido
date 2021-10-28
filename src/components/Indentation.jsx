@@ -1,3 +1,5 @@
+import './style/Indentation.scss';
+
 export function IndentationLeft() {
   return(
     <div className="Left-to-main" onClick={goToTop} title="Up!">

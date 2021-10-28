@@ -1,6 +1,8 @@
+import './style/Navigation.scss'
+
 function Navigation() {
   return(
-    <nav className="Nav">
+    <nav className="Navigation">
       {/* NAVIGATION */}
       <div className="Item"><a href="/">Profile</a></div>
       <div className="Item"><a href="/">Messages</a></div>
@@ -10,6 +12,5 @@ function Navigation() {
     </nav>
   );
 }
-
 
 export default Navigation;

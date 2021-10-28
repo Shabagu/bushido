@@ -1,3 +1,5 @@
+import './style/Ads.scss';
+
 function Ads() {
   return (
     <div className="Ads">
@@ -5,6 +7,5 @@ function Ads() {
     </div>
   );
 }
-
 
 export default Ads;

@@ -1,5 +1,5 @@
+import './style/Header.scss'
 import logo from '../logo.png'
-
 
 function Header() {
   return (
@@ -13,6 +13,5 @@ function Header() {
     </header>
   );
 }
-
 
 export default Header;
