@@ -1,8 +1,8 @@
-import classes from './style/Ads.module.scss';
+import s from './style/Ads.module.scss';
 
 function Ads() {
   return (
-    <div className={classes.ads}>
+    <div className={s.ads}>
       ADS
     </div>
   );

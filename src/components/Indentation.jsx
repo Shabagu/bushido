@@ -1,8 +1,8 @@
-import classes from './style/Indentation.module.scss'
+import s from './style/Indentation.module.scss'
 
 export function IndentationLeft() {
   return(
-    <div className={classes.left} onClick={goToTop} title="Up!">
+    <div className={s.left} onClick={goToTop} title="Up!">
       {/* LEFT */}
     </div>
   );
@@ -10,7 +10,7 @@ export function IndentationLeft() {
 
 export function IndentationRight() {
   return(
-    <div className={classes.right}>
+    <div className={s.right}>
       {/* RIGHT */}
     </div>
   );
