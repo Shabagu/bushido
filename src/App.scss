@@ -1,13 +1,13 @@
-@import "components/style/colors";
-@import "components/style/width";
+@import "components/style/var/colors";
+@import "components/style/var/width";
 
 @font-face {
   font-family: 'StadioNow-Novarese';
-  src: url(fonts/StadioNow-Novarese.otf);
+  src: url(components/style/fonts/StadioNow-Novarese.otf);
 }
 @font-face {
   font-family: 'StadioNow-Monolinea';
-  src: url(fonts/StadioNow-Monolinea.otf);
+  src: url(components/style/fonts/StadioNow-Monolinea.otf);
 }
 
 .App {

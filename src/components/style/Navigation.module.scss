@@ -1,4 +1,4 @@
-@import "./colors";
+@import "./var/colors";
 
 .nav {
   grid-area: n;
@@ -23,4 +23,8 @@
 }
 .item a:focus{
   outline: 1px solid $main-color-light;
+}
+.item a:hover{
+  outline: 1px solid $hover-color;
+  color: $hover-color;
 }
