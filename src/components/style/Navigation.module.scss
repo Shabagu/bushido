@@ -3,28 +3,32 @@
 .nav {
   grid-area: n;
   overflow: hidden;
-}
-.item {
-  text-indent: 12px;
-  line-height: 1.3em;
-}
-.item:first-child {
-  margin-top: 24px;
-}
-.item:last-child {
-  margin-top: 32px;
-}
-.item a{
-  display: block;
-  width: 92%;
-  margin-left: 4%;
-  color: $main-color-light;
-  text-decoration: none;
-}
-.item a:focus{
-  outline: 1px solid $main-color-light;
-}
-.item a:hover{
-  outline: 1px solid $hover-color;
-  color: $hover-color;
+
+  .item {
+    text-indent: 12px;
+    line-height: 1.3em;
+
+    &:first-child {
+      margin-top: 24px;
+    }
+    &:last-child {
+      margin-top: 32px;
+    }
+
+    a {
+      display: block;
+      width: 92%;
+      margin-left: 4%;
+      color: $main-color-light;
+      text-decoration: none;
+
+      &:focus{
+        outline: 1px solid $main-color-light;
+      }
+      &:hover{
+        outline: 1px solid $hover-color;
+        color: $hover-color;
+      }
+    }
+  }
 }

@@ -14,23 +14,27 @@
   background-color: $background-color;
   display: flex;
   justify-content: center;
-}
-.wrapper {
-  width: 1320px;
-  height: inherit;
-}
-.logo {
-  height: inherit;
-  margin-left: 64px;
-  display: flex;
-  align-items: center;
-}
-.logo img {
-  height: 64px;
-  user-select: none;
-}
-.title {
-  font-family: 'StadioNow-Novarese';
-  text-shadow: 4px 4px 0 $main-color-dark;
-  user-select: none;
+
+  .wrapper {
+    width: 1320px;
+    height: inherit;
+
+    .logo {
+      height: inherit;
+      margin-left: 64px;
+      display: flex;
+      align-items: center;
+      
+      .title {
+        font-family: 'StadioNow-Novarese';
+        text-shadow: 4px 4px 0 $main-color-dark;
+        user-select: none;
+      }
+
+      img {
+        height: 64px;
+        user-select: none;
+      }
+    }
+  }
 }

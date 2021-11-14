@@ -6,11 +6,13 @@
   border-width: 0 4px 0 0;
   transition-timing-function: ease;
   transition-duration: 200ms;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $main-color-to-top;
+  }
 }
-.left:hover {
-  cursor: pointer;
-  background-color: $main-color-to-top;
-}
+
 .right {
   grid-area: r;
   border: solid $main-color-light;
