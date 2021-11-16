@@ -1,9 +1,9 @@
-import Header from './components/Header';
-import Content from './components/Content';
-import Footer from './components/Footer';
-import Navigation from './components/Navigation';
-import Ads from './components/Ads';
-import { IndentationLeft as IL, IndentationRight as IR } from './components/Indentation';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Navigation from './components/Navigation/Navigation';
+import Ads from './components/Ads/Ads';
+import { IndentationLeft as IL, IndentationRight as IR } from './components/Indentation/Indentation';
+import Profile from './components/Profile/Profile';
 
 import './App.scss';
 
@@ -13,7 +13,7 @@ function App() {
       <Header />
         <IL />
           <Navigation />
-          <Content />
+          <Profile />
           <Ads />
         <IR />
       <Footer />

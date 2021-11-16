@@ -1,4 +1,4 @@
-import s from './style/Ads.module.scss';
+import s from './Ads.module.scss';
 
 function Ads() {
   return (

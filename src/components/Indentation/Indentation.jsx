@@ -1,4 +1,4 @@
-import s from './style/Indentation.module.scss'
+import s from './Indentation.module.scss'
 
 export function IndentationLeft() {
   return(

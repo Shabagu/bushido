@@ -1,20 +1,20 @@
-@import "./var/colors";
+@import "../_style/_variables/colors";
 
 .left {
   grid-area: l;
-  border: solid $main-color-light;
+  border: solid $mainColor-light;
   border-width: 0 4px 0 0;
   transition-timing-function: ease;
   transition-duration: 200ms;
 
   &:hover {
     cursor: pointer;
-    background-color: $main-color-to-top;
+    background-color: $mainColor-up;
   }
 }
 
 .right {
   grid-area: r;
-  border: solid $main-color-light;
+  border: solid $mainColor-light;
   border-width: 0 0 0 4px;
 }

@@ -1,0 +1,9 @@
+@import "../_style/_variables/colors";
+
+.content {
+  grid-area: c;
+  padding: 0 16px;
+  border: solid $mainColor-light;
+  border-width: 0 4px;
+  min-height: 100vh;
+}

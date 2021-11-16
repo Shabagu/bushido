@@ -1,5 +1,5 @@
-@import "./var/colors";
-@import "./var/width";
+@import "../_style/_variables/colors";
+@import "../_style/_variables/width";
 
 .header {
   grid-area: h;
@@ -9,9 +9,9 @@
   font-size: 2em;
   padding: 4px 0;
 
-  border: solid $main-color-light;
+  border: solid $mainColor-light;
   border-width: 0 0 4px;
-  background-color: $background-color;
+  background-color: $backgroundColor;
   display: flex;
   justify-content: center;
 
@@ -27,7 +27,7 @@
       
       .title {
         font-family: 'StadioNow-Novarese';
-        text-shadow: 4px 4px 0 $main-color-dark;
+        text-shadow: 4px 4px 0 $mainColor-dark;
         user-select: none;
       }
 

@@ -1,4 +1,4 @@
-@import "./var/colors";
+@import "../_style/_variables/colors";
 
 .nav {
   grid-area: n;
@@ -19,15 +19,15 @@
       display: block;
       width: 92%;
       margin-left: 4%;
-      color: $main-color-light;
+      color: $mainColor-light;
       text-decoration: none;
 
       &:focus{
-        outline: 1px solid $main-color-light;
+        outline: 1px solid $focusColor;
       }
       &:hover{
-        outline: 1px solid $hover-color;
-        color: $hover-color;
+        outline: 1px solid $mainColor-light;
+        color: $mainColor-light;
       }
     }
   }

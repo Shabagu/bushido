@@ -1,13 +1,13 @@
-@import "components/style/var/colors";
-@import "components/style/var/width";
+@import "components/_style/_variables/colors";
+@import "components/_style/_variables/width";
 
 @font-face {
   font-family: 'StadioNow-Novarese';
-  src: url(components/style/fonts/StadioNow-Novarese.otf);
+  src: url(components/_style/_fonts/StadioNow-Novarese.otf);
 }
 @font-face {
   font-family: 'StadioNow-Monolinea';
-  src: url(components/style/fonts/StadioNow-Monolinea.otf);
+  src: url(components/_style/_fonts/StadioNow-Monolinea.otf);
 }
 
 .App {
@@ -21,11 +21,11 @@
   // grid-column-gap: 20px;
   font-family: 'StadioNow-Monolinea';
   font-size: 24px;
-  color: $main-color-light;
+  color: $mainColor-light;
 }
 
 body {
-  background-color: $background-color;
+  background-color: $backgroundColor;
 }
 
 // * { border: solid $main-color-light 1px; }
